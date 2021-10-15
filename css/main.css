@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap');
 
 body {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+}
+p,h1,h2,h3,h4,h5,h6{
+    margin:0;
 }
 
 * {
@@ -70,7 +73,19 @@ a {
     color: #DE2E54;
 }
 
-.sitenav__link {
+.sitenav-list{
+    list-style: none;
+    margin: 0;
+    display: flex;
+     padding:0;
+}
+
+.sitenav-item:not(:last-child){
+    margin-right:32px;
+}
+
+.sitenav-item a{
+    font-weight: 700;
     font-weight: bold;
     font-size: 14px;
     line-height: 21px;
@@ -83,6 +98,7 @@ a {
 }
 
 .contact {
+    font-family: 'Open Sans Condensed','Open Sans',sans-serif;
     font-weight: bold;
     font-size: 15px;
     line-height: 22px;
@@ -98,7 +114,7 @@ a {
 .site-header .contact:hover,
 .index-services .contact:hover {
     color: #DE2E54;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border: 2px solid #DE2E54;
 }
 
@@ -132,6 +148,7 @@ a {
 }
 
 .content__title {
+    font-family: 'Open Sans Condensed','Open Sans',sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -143,18 +160,18 @@ a {
     font-size: 18px;
     line-height: 27px;
     margin-bottom: 36px;
-    width: 300px;
+    width: 445px;
 }
 
 .hero__image {
     width: 423px;
     height: 504px;
-    margin-top: 36px;
+    margin-top: 45px;
 }
 
 .hero .contact:hover {
-    border: 1px solid rgba(222, 46, 84, 0.8);
-    background: rgba(222, 46, 84, 0.8);
+    border: 2px solid rgba(222, 46, 84, 0.8);
+    background-color: rgba(222, 46, 84, 0.8);
 }
 
 /* SECTION SERVICES */
@@ -165,16 +182,18 @@ a {
 }
 
 .services-title {
+    font-family: 'Open Sans Condensed','Open Sans',sans-serif;
     font-weight: bold;
     font-size: 36px;
     line-height: 43px;
     color: #000000;
+    margin-bottom:56px;
 }
 
 .services-list {
-    padding: 56px 0 60px 0;
-    width: 864px;
     margin: 0 auto;
+    margin-bottom: 60px;
+    width: 864px;
 }
 
 .services-info {
@@ -199,10 +218,12 @@ a {
 }
 
 .info-content__title {
+    font-family: 'Open Sans Condensed','Open Sans',sans-serif;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
     color: #222222;
+    margin-bottom:24px;
 }
 
 .info-content__text {
@@ -212,8 +233,9 @@ a {
 }
 
 /*SECTION CTA */
+
 .cta {
-    background: #0EB4C1;
+    background-color: #0EB4C1;
     color: #FFFFFF;
     text-align: center;
     padding-top: 64px;
@@ -221,6 +243,7 @@ a {
 }
 
 .cta__title {
+    font-family: 'Open Sans Condensed','Open Sans',sans-serif;
     font-weight: bold;
     font-size: 36px;
     line-height: 43px;
@@ -233,6 +256,7 @@ a {
 }
 
 .cta__contact__link {
+    font-family: 'Open Sans Condensed','Open Sans',sans-serif;
     padding: 12px 24px;
     border: 2px solid #FFFFFF;
     border-radius: 8px;
@@ -241,7 +265,10 @@ a {
     line-height: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin: 0 24px;
+}
+
+.cta__contact__link:not(:last-child){
+    margin-right:24px;
 }
 
 .cta__contact__link:hover {
