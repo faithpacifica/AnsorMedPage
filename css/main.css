@@ -282,14 +282,14 @@ a {
 }
 
 .cta__contact__link:hover {
-    background: #DE2E54;
+    background-color: #DE2E54;
     border: 2px solid #DE2E54;
 }
 
 /* FOOTER */
 
 .site-footer {
-    background: #222222;
+    background-color: #222222;
     padding: 24px 0;
 }
 
